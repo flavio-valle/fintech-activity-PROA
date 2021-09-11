@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-header: #34af68;
+    --color-header: #ffffff;
+    --h2: #34af68;
+    --input-select: #34af68;
+    --label: #7e7e7e;
+    --bg-botao: #5baaeb;
+    --border-botao: #14546d;
+    --botao-hover: #14546d;
+    --body-bg: #0a0a0a;
+
+}
+
+.dark-mode:root {
+    
+
+
+}
+
+body{
+    background-image: url(cifra.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20%;
+    background-position-x: 50%;
+    background-color: var(--body-bg);
+
+}
+
+@font-face {
+    font-family:'portal';
+    src: url(portal.ttf);
+} 
+
+@font-face {
+    font-family: 'Economica-Regular';
+    src: url(Economica-Regular.ttf);
+} 
+
+header{
+    background-color: var(--body-header);
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header h1{
+    font-size: 10vw;
+    font-family: portal;
+}
+
+td{
+    margin-top: 20px;
+}
+
+.main{
+
+    width: 100vw;
+    margin-top: 30px;
+    font-family: Economica-Regular;
+}
+
+h2{
+    font-size: 11vw;
+    margin-left: 10px;
+    margin-top: 50px;
+    font-family: Economica-Regular;
+    color: var(--h2);
+}
+
+.main h2, label, input, select{
+   margin-left: 10px;
+   margin-top: 17px;
+   margin-bottom: 10px;
+}
+
+.sim{
+    margin-top: 20px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+input, select:focus{
+    outline-color: var(--input-select);
+}
+
+label{
+    font-family: Arial;
+    font-size: 3.6vw;
+    color: var(--label);
+    font-weight: bold;
+}
+
+input{
+    width: 80vw;
+    height: 30px;
+}
+
+.botao{
+    width: 40vw;
+    background-color: #5baaeb;
+    height: 30px;
+    border: 2px solid;
+    border-color: var(--border-botao);
+    border-radius: 2px;
+    color: white;
+    margin-top: 65px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    transition: all 1s;
+    background-color: var(--botao-hover);
+}
+
+.form{
+    margin-top: 50px;
+}
+
+select{
+    height: 30px;
+}
+
